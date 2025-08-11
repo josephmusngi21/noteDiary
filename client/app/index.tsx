@@ -1,7 +1,11 @@
 import { Text, View } from "react-native";
-import Main from '../components/pages/Main/Main'
+// import Main from '../components/pages/Main/Main';
+import Navigate from "../components/pages/Navigate/Navigate";
 
 export default function Index() {
+  const currentDate = new Date();
+  const currentDay = currentDate.getDate();
+  const currentYear = currentDate.getFullYear();
   return (
     <View
       style={{
@@ -10,7 +14,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Main />
+      <Navigate />
     </View>
   );
 }
