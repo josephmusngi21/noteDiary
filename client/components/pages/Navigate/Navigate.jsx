@@ -1,16 +1,21 @@
-import {View,StyleSheet, Text} from "react-native";
+import {View,StyleSheet, Text, TouchableOpacity} from "react-native";
 
-export default function Navigate() {
+export default function Navigate({dateInt, yearInt}) {
     return (
         <View style={styles.container}>
             <View style={styles.date}>
-                <Text style={styles.text}>8 | 2025</Text>
+                <Text style={styles.text}>{dateInt} | {yearInt}</Text>
             </View>
             <View style={styles.current}>
-
+                <Text>O</Text>
             </View>
             <View style={styles.menu}>
-
+                <TouchableOpacity>
+                    <Text>Search</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Text>Menu</Text>
+                </TouchableOpacity>
             </View>
         </View>
     )
