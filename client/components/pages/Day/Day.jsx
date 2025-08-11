@@ -1,6 +1,6 @@
-import {View,StyleSheet, Text} from "react-native";
+import {View,StyleSheet} from "react-native";
 
-export default function Day() {
+export default function Day() {    
     return (<View style={styles.container}>
 
     </View>)
